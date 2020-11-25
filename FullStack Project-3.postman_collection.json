@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "14a845d2-fb07-4588-8a1e-471ea0b4b890",
+		"name": "FullStack Project-3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "localhost:3000/student/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hamad Almesri",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Hamad@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "123345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/student/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"register"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "hamad",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "123@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/student/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hamad Almesri",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Hamad@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "123345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/student/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"login"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "hamad",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "123@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "localhost:3000/teacher/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hamad Almesr The Teacher",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "h.almesri03@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/teacher/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/teacher/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hamad Almesr The Teacher",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "h.almesri03@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/teacher/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/teacher/students",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZmJlMzQ1YzY5ZjdiODBhNGNjYzdmOTEiLCJpYXQiOjE2MDYzMDA5MzIsImV4cCI6MTYwNjMwMTgzMn0.EGhyReBWrXdxYZZlJd6IsjM2Emlu5TQDgiyfBqzWRvg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/teacher/students",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/teacher/students/edit/:email/:newEmail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/teacher/students/edit/:email/:newEmail",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"students",
+								"edit",
+								":email",
+								":newEmail"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "Hamad@gmail.com"
+								},
+								{
+									"key": "newEmail",
+									"value": "HamadTheTeacher@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/teacher/students/delete/:email",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/teacher/students/delete/:email",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"students",
+								"delete",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "HamadTheTeacher@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
